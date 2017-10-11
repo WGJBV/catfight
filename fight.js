@@ -1,5 +1,6 @@
 'use strict';
 
+// gh pages sucks
 //Over 9000 variables
 var fightData = [];
 var playerOneAtt = document.getElementById('pOneAtt');
