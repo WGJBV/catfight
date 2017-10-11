@@ -156,7 +156,7 @@ function pOneDefHandler() {
   var randomHeal = 0;
   randomHeal = Math.floor(Math.random() * (12 - 2) + 3);
   playerOne.health = playerOne.health + randomHeal;
-  document.getElementById('playerOneHP').innerHTML = playerOne.health;
+  document.getElementById('playerOneHP').setAttribute('value', playerOne.health);
   healSound();
   pTwoTurn();
 }
@@ -188,7 +188,7 @@ function pTwoDefHandler() {
   randomHeal = Math.floor(Math.random() * (12 - 2) + 3);
   score = score - randomHeal;
   playerTwo.health = playerTwo.health + randomHeal;
-  document.getElementById('playerTwoHP').innerHTML = playerTwo.health;
+  document.getElementById('playerOneHP').setAttribute('value', playerOne.health);
   healSound();
   pOneTurn();
 }
